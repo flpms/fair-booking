@@ -1,0 +1,19 @@
+{
+  "name": "fair-booking",
+  "description": "Get a clean navigation at booking.com",
+  "manifest_version": 2 ,
+  "version": "0.0.4",
+  "author": "Filipe M. Silva",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.booking.com/*"],
+      "js": ["./cs.js"]
+    }
+  ],
+  "permissions": [ "activeTab" ]
+}
